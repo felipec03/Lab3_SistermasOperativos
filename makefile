@@ -1,9 +1,17 @@
-FLAGS: -Wall
+CC = gcc
+CFLAGS = -Wall -pthread
+TARGET = lab3
 
-all: lab3.o
+all: $(TARGET)
+
+$(TARGET): lab3.o funciones.o
+	$(CC) $(CFLAGS) -o $(TARGET) lab3.o funciones.o
 
 lab3.o: lab3.c funciones.h
-    gcc -c $(FLAGS) lab3.c $(FLAGS)
+	$(CC) $(CFLAGS) -c lab3.c
 
 funciones.o: funciones.c funciones.h
-    gcc -c $(FLAGS) funciones.c -o funciones.o
+	$(CC) $(CFLAGS) -c funciones.c
+
+clean:
+	rm -f *.o $(TARGET)
