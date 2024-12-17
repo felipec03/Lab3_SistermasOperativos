@@ -13,4 +13,4 @@ void print_array(int *array, int n);
 // Manejo de hebras
 void handle_threads(int *array, int n);
 
-#endif // FUNCIONES_H
+#endif 
