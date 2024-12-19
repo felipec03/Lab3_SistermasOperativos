@@ -5,7 +5,22 @@
 
 ****
 
-## `funciones.c`
+## Ejecución del laboratorio
+Cómo fue estipulado en clases, para poder probar los comandos es necesario el uso de `makefile`, por lo que el comando para la generación de los archivos ejecutables es:
+```
+make all
+```
+
+Para limpiar los archivos residuales post ejecución de los archivos, se utiliza:
+```
+make clean
+```
+
+****
+
+## Estructuración del código
+
+### `funciones.c` y `funciones.h`
 > En este apartado se desarrolla la mayor parte del laboratorio, donde se maneja:
 
 
@@ -18,6 +33,6 @@
 
 ****
 
-## `lab3.c`
+### `lab3.c`
 
 > La función que cumple este archivo es prácticamente recopilar todo lo desarrollado en `funciones.c`, haciendo una implementación de flags con `getopt` y manjando el input del usuario por consola. 
