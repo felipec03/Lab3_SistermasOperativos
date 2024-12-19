@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <pthread.h>
 #include "funciones.h"
 
 // Mutex para sincronización
@@ -10,7 +7,6 @@ pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 // Variables globales para compartir entre hebras
 int *shared_array;
 int size;
-
 
 // Entradas: void *arg, un puntero a void
 // Salidas: void *, un puntero a void

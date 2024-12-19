@@ -1,6 +1,13 @@
 #ifndef FUNCIONES_H
 #define FUNCIONES_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+// Función para las hebras
+void *thread_function(void *arg);
+
 // Función para leer el archivo de entrada
 int read_input_file(const char *filename, int **array);
 

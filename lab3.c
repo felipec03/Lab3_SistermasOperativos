@@ -1,8 +1,5 @@
 // Manejo de librerías
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <pthread.h>
+
 #include "funciones.h"
 #include <bits/getopt_core.h>
 
